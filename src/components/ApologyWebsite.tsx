@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect, useRef, ReactNode, MouseEvent as ReactMouseEvent } from 'react';
-import { Heart, Sparkles, MessageCircle, Star, Clock, CheckCircle } from 'lucide-react';
+import React, { useState, useEffect, useRef, ReactNode } from 'react';
+import { Heart, Sparkles, Clock, CheckCircle } from 'lucide-react';
 
 // Type definitions for custom components
 interface ButtonProps {
@@ -101,10 +101,11 @@ const ApologyWebsite: React.FC = () => {
         }
     }, [currentStep]);
 
-    // Calculate time since argument (adjust this date)
-    const argumentDate = new Date('2025-07-18T00:00:00');
+
+
 
     useEffect(() => {
+        const argumentDate = new Date('2025-07-18T00:00:00');
         const timer = setInterval(() => {
             const now = new Date();
             const diff = now.getTime() - argumentDate.getTime();
@@ -114,7 +115,7 @@ const ApologyWebsite: React.FC = () => {
             setTimeElapsed(`${days} days, ${hours} hours, ${minutes} minutes`);
         }, 1000);
         return () => clearInterval(timer);
-    }, [argumentDate]);
+    }, []);
 
     const apologyWords = ['I', 'AM', 'TRULY', 'SORRY', 'AYUSHI'];
 
@@ -280,7 +281,7 @@ const ApologyWebsite: React.FC = () => {
                         <Card className="bg-gradient-to-r from-pink-50 to-red-50 animate-fade-in animation-delay-1000">
                             <CardContent className="p-6">
                                 <p className="text-lg text-gray-700">
-                                    I shouldn't have criticized you like that
+                                    I shouldn&apos;t have criticized you like that
                                 </p>
                             </CardContent>
                         </Card>
@@ -321,7 +322,7 @@ const ApologyWebsite: React.FC = () => {
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-4 w-4 text-black" />
                                     <AlertDescription className="text-black font-medium">
-                                        I'm not making excuses. I messed up, and I own that completely.
+                                        I&apos;m not making excuses. I messed up, and I own that completely.
                                     </AlertDescription>
                                 </div>
                             </Alert>
@@ -372,7 +373,7 @@ const ApologyWebsite: React.FC = () => {
                             <CardContent className="p-8">
                                 <div className="text-6xl mb-4">💔➡️❤️</div>
                                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                                    I'm truly sorry for what I said about your photo, Ayushi.
+                                    I&apos;m truly sorry for what I said about your photo, Ayushi.
                                 </h3>
                                 <p className="text-lg text-gray-600 mb-6">
                                     My words were hurtful and I deeply regret them.
