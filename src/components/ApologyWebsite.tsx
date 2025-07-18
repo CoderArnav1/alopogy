@@ -117,7 +117,7 @@ const ApologyWebsite: React.FC = () => {
         return () => clearInterval(timer);
     }, []);
 
-    const apologyWords = ['I', 'AM', 'TRULY', 'SORRY', 'AYUSHI'];
+    const apologyWords = ['I', 'AM', 'TRULY', 'SORRY', 'AAYUSHI'];
 
     useEffect(() => {
         setProgress((currentStep / (steps.length - 1)) * 100);
@@ -221,7 +221,7 @@ const ApologyWebsite: React.FC = () => {
     const steps = [
         // Step 0: Welcome
         {
-            title: "Hi Ayushi",
+            title: "Hi Aayushi",
             content: (
                 <div className="text-center space-y-6">
                     <div className="text-8xl animate-pulse mb-4">👋</div>
@@ -373,7 +373,7 @@ const ApologyWebsite: React.FC = () => {
                             <CardContent className="p-8">
                                 <div className="text-6xl mb-4">💔➡️❤️</div>
                                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                                    I&apos;m truly sorry for what I said about your photo, Ayushi.
+                                    I&apos;m truly sorry for what I said about your photo, Aayushi.
                                 </h3>
                                 <p className="text-lg text-gray-600 mb-6">
                                     My words were hurtful and I deeply regret them.
